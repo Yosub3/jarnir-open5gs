@@ -69,17 +69,17 @@ fi
 print_success "Cleanup complete!"
 echo ""
 
-# Redeploy using deploy-k3s.sh
-print_info "Step 2: Redeploying Open5GS using deploy-k3s.sh..."
+# Redeploy using deploy-k3s-calico.sh
+print_info "Step 2: Redeploying Open5GS using deploy-k3s-calico.sh..."
 echo ""
 
-if [ ! -f "./deploy-k3s.sh" ]; then
-    print_error "deploy-k3s.sh not found in current directory!"
+if [ ! -f "./deploy-k3s-calico.sh" ]; then
+    print_error "deploy-k3s-calico.sh not found in current directory!"
     exit 1
 fi
 
 # Execute deployment script
-./deploy-k3s.sh
+./deploy-k3s-calico.sh
 
 print_success "=== Redeployment Complete ==="
 echo ""

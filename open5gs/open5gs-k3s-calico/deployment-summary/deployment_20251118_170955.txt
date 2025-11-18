@@ -1,0 +1,79 @@
+================================================================================
+Open5GS Deployment Summary
+================================================================================
+Timestamp: 2025-11-18 17:11:43
+Deployment ID: 20251118_170955
+
+================================================================================
+OVERALL TIMING
+================================================================================
+Total Deployment Time: 108288ms (108.28s)
+
+Phase Breakdown:
+  - Stop Services:     38ms
+  - Cleanup:           13493ms
+  - Foundation:        7533ms
+  - ConfigMaps:        5388ms
+  - Parallel Deploy:   76399ms
+  - Metrics Collection: 5402ms
+
+================================================================================
+PER-POD DEPLOYMENT TIME (ms)
+================================================================================
+nrf:                 20570 ms
+scp:                 20781 ms
+
+================================================================================
+NRF/SCP METRICS
+================================================================================
+NRF Registered NFs:   0
+SCP Registration Events: 8
+
+================================================================================
+DEPLOYED RESOURCES
+================================================================================
+NAME     READY   STATUS    RESTARTS   AGE   IP            NODE                NOMINATED NODE   READINESS GATES
+amf-0    1/1     Running   0          36s   10.10.0.5     jarnir-virtualbox   <none>           <none>
+ausf-0   1/1     Running   0          39s   10.10.0.11    jarnir-virtualbox   <none>           <none>
+nrf-0    1/1     Running   0          81s   10.10.0.10    jarnir-virtualbox   <none>           <none>
+nssf-0   1/1     Running   0          39s   10.10.0.14    jarnir-virtualbox   <none>           <none>
+pcf-0    1/1     Running   0          37s   10.10.0.13    jarnir-virtualbox   <none>           <none>
+scp-0    1/1     Running   0          61s   10.10.0.200   jarnir-virtualbox   <none>           <none>
+smf-0    1/1     Running   0          39s   10.10.0.4     jarnir-virtualbox   <none>           <none>
+udm-0    1/1     Running   0          37s   10.10.0.12    jarnir-virtualbox   <none>           <none>
+udr-0    1/1     Running   0          39s   10.10.0.20    jarnir-virtualbox   <none>           <none>
+upf-0    1/1     Running   0          36s   10.10.0.7     jarnir-virtualbox   <none>           <none>
+
+================================================================================
+SERVICES
+================================================================================
+NAME      TYPE        CLUSTER-IP      EXTERNAL-IP      PORT(S)                      AGE
+amf       ClusterIP   10.43.188.233   172.16.206.128   7777/TCP,38412/SCTP          38s
+ausf      ClusterIP   10.43.234.113   <none>           7777/TCP                     39s
+mongodb   ClusterIP   None            <none>           27017/TCP                    92s
+nrf       ClusterIP   10.43.146.63    <none>           7777/TCP                     82s
+nssf      ClusterIP   10.43.131.151   <none>           7777/TCP                     39s
+pcf       ClusterIP   10.43.169.211   <none>           7777/TCP                     38s
+scp       ClusterIP   10.43.150.186   <none>           7777/TCP                     61s
+smf       ClusterIP   10.43.81.42     <none>           7777/TCP,8805/UDP,9090/TCP   39s
+udm       ClusterIP   10.43.158.3     <none>           7777/TCP                     38s
+udr       ClusterIP   10.43.16.92     <none>           7777/TCP                     39s
+upf       ClusterIP   10.43.185.11    <none>           8805/UDP,2152/UDP,9090/TCP   37s
+
+================================================================================
+NF REGISTRATION DETAILS (from NRF logs)
+================================================================================
+[32m11/18 10:10:43.522[0m: [[33mnrf[0m] [1;32mINFO[0m: [d7d4596e-c466-41f0-a419-69c4456bb87a] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:12.156[0m: [[33mnrf[0m] [1;32mINFO[0m: [e8bf1746-c466-41f0-8111-11d63f4fdeb1] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:12.224[0m: [[33mnrf[0m] [1;32mINFO[0m: [e8e4a8e4-c466-41f0-8e54-8f9275613b12] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:12.555[0m: [[33mnrf[0m] [1;32mINFO[0m: [e91f2866-c466-41f0-a746-dd3bf340daae] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:12.797[0m: [[33mnrf[0m] [1;32mINFO[0m: [e944b734-c466-41f0-bb11-6754072d6842] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:13.603[0m: [[33mnrf[0m] [1;32mINFO[0m: [e9bd9190-c466-41f0-b5c6-63aa2db06c17] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:13.717[0m: [[33mnrf[0m] [1;32mINFO[0m: [e9d0bc98-c466-41f0-bfba-8db6fd393b33] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+[32m11/18 10:11:14.551[0m: [[33mnrf[0m] [1;32mINFO[0m: [ea50d6bc-c466-41f0-892e-d51e89dce136] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:204)
+
+================================================================================
+DEPLOYMENT ENDPOINTS
+================================================================================
+AMF NGAP Endpoint: 10.0.2.15:38412
+Configure your gNB to connect to: 10.0.2.15:38412
