@@ -1,6 +1,6 @@
 ## Tugas 1: Konektivitas Dasar
 
-### Tanggal: 25 November 2025<br>
+### Tanggal: 18 November 2025<br>
 ### Nama: 
 - Satria Angga Wahyunenda
 - Yosua Narwastu Karno Misi
