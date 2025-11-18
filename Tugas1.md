@@ -21,7 +21,7 @@
 - IMSI: imsi-001011000000001
 - TUN Interface: uesimtun0
 - IP Address: 10.45.0.2
-<img width="806" height="245" alt="image" src="https://github.com/user-attachments/assets/50abe04b-7852-48ce-b208-83be75e0b5c2" />
+<img width="1140" height="490" alt="image" src="https://github.com/user-attachments/assets/f62669fa-3f96-4293-98f8-2aa5c6dd1f47" />
 
 
 ### Connectivity Tests
