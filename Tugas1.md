@@ -3,7 +3,7 @@
 ### Tanggal: 18 November 2025<br>
 ### Nama: 
 - Satria Angga Wahyunenda
-- Yosua Narwastu Karno Misi
+- Yosua Narwastu Karno Misi 235150201111016
 ### Status K3s: WORKING
 <img width="809" height="292" alt="image" src="https://github.com/user-attachments/assets/183a70bb-8daa-48f6-969f-a617135d8a91" />
 
